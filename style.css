@@ -1,0 +1,350 @@
+/* Reset basic styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFC6C6;
+    padding-top: 70px; /* Ensure content is below the fixed navbar */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF8E3;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: auto; /* Menyesuaikan ukuran logo */
+    height: 70px;
+    vertical-align: middle; /* Agar logo sejajar dengan teks */
+    margin-right: 10px; /* Memberi jarak antara logo dan teks */
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Menyelaraskan gambar dan teks secara vertikal */
+}
+
+/* Navigation links for desktop */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* Links style */
+.nav-links a {
+    color: #E6A4B4;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effects */
+.nav-links a:hover {
+    background-color: #E6A4B4;
+    color: #F3D7CA;
+    border-radius: 5px;
+}
+
+.head{
+    color:#FFF8E3;
+}
+
+.quote {
+    font-size: 16px;
+    color: #ff69b4;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Konten teks */
+.text-content {
+    flex: 1;
+    color: #ff69b4; /* Soft pink */
+    padding: 20px;
+}
+
+.text-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.animated-text {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ff69b4;
+    text-align: left;
+}
+
+#name {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Konten gambar */
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center; 
+}
+
+.back-oval {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    background-color: #ff69b4;
+    border-radius: 50%; /* Membuat bentuk oval */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Menempatkan oval di tengah */
+    z-index: 1;
+}
+
+.image-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: auto;
+    position: relative;
+    z-index: 2; /* Gambar berada di atas oval */
+}
+
+.social-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+.sos-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: #F6F5F2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #F7B5CA;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #E6A4B4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+.skills-container {
+    background-color: #E6A4B4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+/* Section title */
+.skills-section h2 {
+    color: #F5EEE6;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Skills List */
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    background-color: #F7B5CA;
+    color: #F6F5F2;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover effect for skill items */
+.skills-list li:hover {
+    transform: scale(1.05);
+}
+
+.a-skills {
+    text-decoration: none;  /* Menghilangkan underline */
+    color: #F6F5F2;         /* Mengganti warna teks link menjadi oranye */
+}
+
+/* Optional: Tambahkan efek hover */
+.a-skills:hover {
+    color: #E6A4B4;  /* Mengubah warna saat di-hover */
+}
+
+@keyframes fadeEffect {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links on smaller screens */
+        flex-direction: column;
+        background-color: #FFEFEF;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Hamburger icon for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #FFEFEF;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Animasi ketika hamburger di-klik */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translateY(7px);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translateY(-7px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content {
+        margin-top: 20px;
+    }
+}
